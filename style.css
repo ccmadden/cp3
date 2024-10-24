@@ -1,0 +1,284 @@
+/* Base Styles - Mobile-First Design */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+   nav ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    background-color: gray;
+    color: black;
+   
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid #333;
+  }
+  
+  nav a:hover, nav a:focus {
+  text-decoration: underline;
+  background-color: darkblue;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  
+  /* Header Styling */
+   header {
+    position: sticky; /* Makes the header sticky */
+  top: 0; /* Ensures it sticks to the top of the viewport */
+  z-index: 1000; /* Ensures the header stays above other content */
+  background-color: #036; /* Navy background for the header */
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 a {
+    color: #fff;
+   text-decoration: none;
+    font-size: 20px;
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Sticks to the top of the page */
+    z-index: 1000; /* Ensures the header stays above other content */
+    
+  }
+  
+  header h2{
+    font-size: 15px;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  header a:focus {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+ main {
+    padding: 20px;
+    margin-bottom: 20px;
+
+  }
+  p {
+    text-align: center;
+  }
+  
+  
+  /* Athlete Section */
+
+  /* Athlete Section */
+.athlete {
+  margin: 1em 0;
+  display: inline-block;
+  align-items: center;
+
+}
+
+.athlete img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 200px;
+  height: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 22px;
+}
+
+.athlete dl {
+  margin: 0;
+}
+.athlete figure {
+  font-weight: bold;
+  color: navy; 
+  display: block;
+
+}
+.athlete dt {
+  font-weight: bold;
+  color: navy;
+}
+
+
+.athlete{
+  margin: 0;
+}
+
+.athlete img:hover, .athlete img:focus {
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+
+
+/*
+
+.athlete-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.athlete img{
+  text-align: center;
+  background-color: #f9f9f9; 
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+  margin: auto;
+
+}
+
+.athlete img:hover, .athlete img:focus {
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+
+
+.athlete img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+  margin-bottom: 10px;
+}
+
+.athlete dl {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+
+  .athlete figure {
+    font-weight: bold;
+    color: navy; 
+    display: block;
+ 
+}
+
+#individual-results{
+  display: block;
+}
+
+.athlete img{
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  display: block;
+
+}
+
+  .athlete dt {
+    font-weight: bold;
+    color: navy;
+}
+
+ 
+.athlete dl{
+   margin: 10px 0;
+   line-height: 1.5;
+}
+*/
+  
+  
+  /* Team Results Table */
+   table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  @media (max-width: 600px) {
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .athlete img {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Media/ Mobile View/ Accessibility */
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none;
+    }
+  } 
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #1e1e1e;
+      color: #f4f4f4;
+    }
+  
+    nav {
+      background-color: #333;
+    }
+  
+    table {
+      border-color: #444;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #2e2e2e;
+    }
+  }
+  
+  /* media query to control the screen width
+  - set media quey to default to mobile first*/
+   
+  /* Footer Styling */
+   footer {
+    background-color: #036;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  footer a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+   
